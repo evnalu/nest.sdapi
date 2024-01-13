@@ -1,6 +1,6 @@
 import axios, { CreateAxiosDefaults } from 'axios';
-import { SdapiTxt2imgDto, SdapiImg2imgDto } from '../dtos';
-import { Sdapi2imgRes } from '../interfaces';
+import { SdapiTxt2imgDto, SdapiImg2imgDto, SdapiProgressDto } from '../dtos';
+import { Sdapi2imgRes, SdapiProgressRes } from '../interfaces';
 
 export class Sdapi {
   public readonly sdapiModuleBasePath = '/sdapi/v1';
@@ -20,6 +20,11 @@ export class Sdapi {
 
   public async img2img(img2imgDto: SdapiImg2imgDto): Promise<Sdapi2imgRes> {
     const res = await this.axios.post(`${this.sdapiModuleBasePath}/img2img`, img2imgDto);
+    return res.data;
+  }
+
+  public async progress(params?: SdapiProgressDto): Promise<SdapiProgressRes> {
+    const res = await this.axios.get(`${this.sdapiModuleBasePath}/progress`, { params });
     return res.data;
   }
 }
