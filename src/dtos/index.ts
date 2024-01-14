@@ -3,4 +3,8 @@ export * from './control-net.dto';
 export * from './sdapi.dto';
 export * from './sdapi-txt2img.dto';
 export * from './sdapi-img2img.dto';
+export * from './sdapi-extra.dto';
+export * from './sdapi-png-info.dto';
 export * from './sdapi-progress.dto';
+export * from './sdapi-interrogate.dto';
+export * from './sdapi-options.dto';
