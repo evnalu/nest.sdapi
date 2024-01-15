@@ -3,7 +3,7 @@ export class ReActorSetting {
   target_image: string;
   source_faces_index: [number] = [0];
   face_index: [number] = [0];
-  upscaler: string = "None";
+  upscaler: string;
   scale: number = 1.5;
   upscale_visibility: number = 1;
   face_restorer: string = "CodeFormer";
