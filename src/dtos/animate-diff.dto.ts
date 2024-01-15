@@ -18,7 +18,7 @@ export class AnimateDiffSetting {
   last_frame: string;
   latent_power_last: number = 1;
   latent_scale_last: number = 32;
-  request_id: '';
+  request_id: string;
 }
 
 export enum AnimateDiffFormatTypes {

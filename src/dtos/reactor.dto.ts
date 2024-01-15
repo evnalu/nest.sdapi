@@ -14,7 +14,7 @@ export class ReActorSetting {
   gender_source: number = 0;
   gender_target: number = 0;
   save_to_file: number = 1;
-  result_file_path: string = "";
+  result_file_path: string;
   device: DeviceTypes;   //CPU or CUDA
   mask_face: number;
   select_source: number;
