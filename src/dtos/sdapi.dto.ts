@@ -1,5 +1,7 @@
 import { ADetailerDto } from './adetailer.dto';
+import { AnimateDiffDto } from './animate-diff.dto';
 import { ControlNetDto } from './control-net.dto';
+import { ReActorDto } from './reactor.dto';
 
 export class SdapiOverrideSetting {
 
@@ -10,8 +12,10 @@ export class SdapiOverrideSetting {
 export class SdapiComment { }
 
 export class SdapiAlwaysonScript {
-  ADetailer: ADetailerDto;
-  ControlNet: ControlNetDto;
+  ADetailer?: ADetailerDto;
+  ControlNet?: ControlNetDto;
+  reactor?: ReActorDto;
+  AnimateDiff?: AnimateDiffDto;
 }
 
 export class Sdapi2imgDto {
