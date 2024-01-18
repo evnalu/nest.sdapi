@@ -7,6 +7,12 @@ export class SdapiOverrideSetting {
 
 
   sd_model_checkpoint: string;
+
+
+  eta_noise_seed_delta: number = 0.0;
+
+
+  CLIP_stop_at_last_layers: number = 1.0;
 }
 
 export class SdapiComment { }

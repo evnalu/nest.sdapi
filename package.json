@@ -1,6 +1,6 @@
 {
   "name": "@evnalu/nest.sdapi",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Stable diffusion webui api",
   "author": "Evna Lu",
   "private": false,
